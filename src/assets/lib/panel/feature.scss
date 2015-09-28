@@ -1,0 +1,54 @@
+@import "@nib-styles/sass-grid";
+@import "@nib-styles/v2-typography";
+@import "@nib-styles/v2-buttons";
+
+// === Feature Panel ===
+
+.feature-panel {
+  padding: 2rem;
+  @include grid();
+}
+
+.feature-panel__image {
+  @include grid__unit();
+  @include grid__unit--cols('min');
+}
+
+.feature-panel__content {
+  @include grid__unit();
+  @include grid__unit--cols('max');
+}
+
+.feature-panel__title {
+  @extend .v2-title;
+  @extend .v2-title--3;
+}
+
+.feature-panel__description {
+  @extend .v2-copy;
+  @extend .v2-copy--large;
+}
+
+.feature-panel__action {
+  margin-top: 1.5em;
+  @extend .v2-button;
+  @extend .v2-button--primary;
+}
+
+.feature-panel__disclaimer {
+    @extend .v2-copy;
+    @extend .v2-copy--small;
+}
+
+// === Feature Panel - Image on left ===
+
+.feature-panel--left .feature-panel__content {
+  padding-left: 2rem;
+}
+
+// === Feature Panel - Image on right ===
+
+.feature-panel--right .feature-panel__content {
+  padding-right: 2rem;
+  @include grid__unit--order-first();
+}

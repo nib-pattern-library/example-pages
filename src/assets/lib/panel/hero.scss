@@ -1,0 +1,22 @@
+@import "@nib-styles/v2-typography";
+@import "@nib-styles/v2-buttons";
+
+.hero-panel {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.hero-panel__title {
+  @extend .v2-title;
+  @extend .v2-title--1;
+}
+
+.hero-panel__subtitle {
+  @extend .v2-subtitle;
+}
+
+.hero-panel__action {
+  margin-top: 1.5em;
+  @extend .v2-button;
+  @extend .v2-button--primary;
+}
