@@ -8,7 +8,6 @@
   padding: 2rem;
   @include grid();
   @include grid--valign-middle();
-  border-top:1px solid #eee;
 }
 
 .feature-panel__image {
