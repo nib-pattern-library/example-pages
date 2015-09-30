@@ -7,6 +7,7 @@
 .feature-panel {
   padding: 2rem;
   @include grid();
+  border-top:1px solid #eee;
 }
 
 .feature-panel__image {
@@ -44,6 +45,7 @@
 
 .feature-panel--left .feature-panel__content {
   padding-left: 2rem;
+  width:50%; /* just putting this in to get the text to wrap - remove when comlumn widths are set*/ 
 }
 
 // === Feature Panel - Image on right ===
@@ -51,4 +53,5 @@
 .feature-panel--right .feature-panel__content {
   padding-right: 2rem;
   @include grid__unit--order-first();
+  width:50%; /* just putting this in to get the text to wrap - remove when comlumn widths are set*/ 
 }
