@@ -16,10 +16,15 @@ title:      Form
     				<label class="control__label label">
     				Select box label
     				</label>
-    				<select class="control__input input input--select">
-                        <option>Test option 1</option>
-                        <option>Test option 2</option>
-    				</select>
+                    <p class="control__support support">
+                    Supporting text
+                    </p>
+                    <div class="control__input input input--select">
+        				<select value="select">
+                            <option>Test option 1</option>
+                            <option>Test option 2</option>
+        				</select>
+                    </div>    
     			</div>
     			<div class="form__control control">
     				<label class="control__label label">
@@ -37,7 +42,7 @@ title:      Form
     			</div>
     	</div>
 
-    	<div class="form form--green">
+    	<div class="form form--elizabeth">
                 <div class="form__control control">
                     <label class="control__label label">
                     Text input Label
@@ -49,15 +54,20 @@ title:      Form
                     <label class="control__label label">
                     Select box label
                     </label>
-                    <select class="control__input input input--select">
-                        <option>Test option 1</option>
-                        <option>Test option 2</option>
-                    </select>
+                    <div class="control__input input input--select">
+                        <select value="select">
+                            <option>Test option 1</option>
+                            <option>Test option 2</option>
+                        </select>
+                    </div>  
                 </div>
                 <div class="form__control control">
                     <label class="control__label label">
                     Date of birth label
                     </label>
+                    <p class="v2-copy control__support support">
+                    The supporting text explains more about the question
+                    </p>
                     <input class="control__input input input--dob" maxlength="10" placeholder="dd/mm/yyyy">
                     </input>
                 </div>
