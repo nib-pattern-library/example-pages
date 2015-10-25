@@ -1,0 +1,145 @@
+@import "@nib-styles/v2-typography";
+@import "@nib-styles/v2-buttons";
+
+.form{
+	padding:3em 2em;
+	max-width:600px;
+}
+
+.form--elizabeth{
+	background-color:#009623;
+}
+
+.form--white{
+	background-color:#fff;
+	border:1px solid #888;
+}
+
+.form > .control:first-child > .label:first-child{
+  margin-top:0;
+}
+
+.form--white label{
+	text-transform:none;
+}
+
+.form--elizabeth .label{
+	color:#fff;
+}
+
+.form--elizabeth .input{
+	border-color:#fff;
+}
+
+.form--elizabeth .support{
+	color:#fff;
+}
+
+.label, .input, select{
+  font-family: 'Open Sans', sans-serif;
+  line-height:1em;
+  color:#444;
+  display:block
+}
+
+.input, select{
+	font-size:1rem;
+}
+
+.control__label{
+	margin-top:2em;
+}
+
+.control__support{
+	margin:0;
+}
+
+.control__input{
+	margin-top:.25em;
+}
+
+.label--large, .input--large{
+  font-size: 1.25rem;
+}
+
+.label{
+	font-size:1rem;
+	font-weight:700;
+	text-transform:uppercase;
+}
+
+.support{
+	font-style:italic;
+	font-family:Open sans;
+	font-size:.85rem;
+}
+
+.input{
+	font-size:1rem;
+	border-width:1px;
+	border-style:solid;
+	border-color:#ccc;
+	padding:.25em .5em;
+	box-sizing:border-box;
+}
+
+select{
+	font-size:1rem;
+	padding:.5em 2em .5em .5em;
+}
+
+.input--select{
+	background:#fff;
+	border-radius:.175em;
+	padding:0;
+	display:inline-block;
+	position:relative;
+}
+
+.input--select>select{
+	background:transparent;
+	color:#444;
+	-webkit-appearance: none;
+	border:none;
+}
+
+.input--select:after{
+	content: '';
+    position: absolute;
+    top: .75em;
+    right: 10px;
+    pointer-events: none;
+    border-top: 8px solid #444;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+}
+
+.input--dob{
+	width:140px;
+}
+	
+.input::-webkit-input-placeholder{
+	line-height:1.5em;
+}
+
+.input::-webkit-input-value{
+	line-height:1.5em;
+}
+
+		@media screen and (max-width:800px){
+			.label, .input, select{
+				font-size: 1.125rem;
+			}
+		}
+		@media screen and (max-width:480px){
+			.label, .input, select{
+				font-size: 1.25rem;
+			}
+
+			.label--large, .input--large{
+  				font-size: 1.5rem;
+			}
+			.support{
+			font-size:1em;
+			}
+		}
