@@ -1,9 +1,19 @@
 @import "@nib-styles/v2-typography";
 @import "@nib-styles/v2-buttons";
+@import "@nib-styles/v2-icons";
+
+.page__body{
+	padding:3em;
+}
 
 .form{
-	padding:3em 2em;
+	padding:2.5em;
+	width:50%;
+	min-width:320px;
 	max-width:600px;
+	box-sizing:border-box;
+	margin-top:2em;
+	color:#fff;
 }
 
 .form--elizabeth{
@@ -12,15 +22,12 @@
 
 .form--white{
 	background-color:#fff;
-	border:1px solid #888;
+	border:1px solid #ccc;
+	color:#444;
 }
 
 .form > .control:first-child > .label:first-child{
   margin-top:0;
-}
-
-.form--white label{
-	text-transform:none;
 }
 
 .form--elizabeth .label{
@@ -47,23 +54,19 @@
 }
 
 .control__label{
-	margin-top:2em;
+	margin-top:3em;
 }
 
 .control__support{
-	margin:0;
+	margin:.25em 0 0 0 ;
 }
 
 .control__input{
-	margin-top:.25em;
-}
-
-.label--large, .input--large{
-  font-size: 1.25rem;
+	margin-top:.5em;
 }
 
 .label{
-	font-size:1rem;
+	font-size:.9rem;
 	font-weight:700;
 	text-transform:uppercase;
 }
@@ -79,13 +82,13 @@
 	border-width:1px;
 	border-style:solid;
 	border-color:#ccc;
-	padding:.25em .5em;
+	padding:.5em;
 	box-sizing:border-box;
 }
 
 select{
 	font-size:1rem;
-	padding:.5em 2em .5em .5em;
+	padding:.75em 2em .75em .75em;
 }
 
 .input--select{
@@ -94,6 +97,10 @@ select{
 	padding:0;
 	display:inline-block;
 	position:relative;
+}
+
+.input--text{
+	width:100%;
 }
 
 .input--select>select{
@@ -106,7 +113,7 @@ select{
 .input--select:after{
 	content: '';
     position: absolute;
-    top: .75em;
+    top: 1em;
     right: 10px;
     pointer-events: none;
     border-top: 8px solid #444;
@@ -126,19 +133,62 @@ select{
 	line-height:1.5em;
 }
 
-		@media screen and (max-width:800px){
-			.label, .input, select{
-				font-size: 1.125rem;
+input[type="password"]
+{
+  -webkit-text-security: disc;
+}
+
+.v2-button{
+	margin-top:3em;
+}
+
+		@media screen and (max-width:1200px){
+
+
+			.input, select{
+				font-size: 1rem;
+			}
+
+			.label{
+				font-size: .75rem;
 			}
 		}
+
+		@media screen and (max-width:960px){
+
+			.label{
+				font-size: .9rem;
+			}
+		}
+
+		@media screen and (max-width:800px){
+			.input, select{
+				font-size: 1.125rem;
+			}
+
+			.label{
+				font-size: 1rem;
+			}
+		}
+
+		@media screen and (max-width:640px){
+			.form{
+			width:100%;
+			}
+			.page__body{
+			padding:0;
+			}
+		}
+		
 		@media screen and (max-width:480px){
-			.label, .input, select{
+			.input, select{
 				font-size: 1.25rem;
 			}
 
-			.label--large, .input--large{
-  				font-size: 1.5rem;
+			.label{
+				font-size: 1.125rem;
 			}
+
 			.support{
 			font-size:1em;
 			}
