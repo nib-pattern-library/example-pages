@@ -3,7 +3,15 @@
 @import "@nib-styles/v2-icons";
 
 .page__body{
+	padding:0;
+}
+
+.panel{
 	padding:3em;
+}
+
+.panel--grey{
+	background-color:#eee;
 }
 
 .form{
