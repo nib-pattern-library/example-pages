@@ -4,6 +4,7 @@
 
 .page__body{
 	padding:0;
+	color:#444;
 }
 
 .panel{
@@ -12,6 +13,13 @@
 
 .panel--grey{
 	background-color:#eee;
+}
+
+.panel-form-support{
+	width:50%;
+	float:left;
+	padding:2em 2em 2em 0;
+	box-sizing:border-box;
 }
 
 .form{
@@ -30,8 +38,19 @@
 
 .form--white{
 	background-color:#fff;
+}
+
+.form--grey{
+	background-color:#eee;
+}
+
+.form--light{
 	border:1px solid #ccc;
 	color:#444;
+}
+
+.panel > .form{
+  margin-top:0;
 }
 
 .form > .control:first-child > .label:first-child{
