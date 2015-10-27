@@ -120,7 +120,7 @@
 .control__message {
   padding: 0.75em;
   color: #fff;
-  font-size: 1rem;
+  font-size: .85rem;
   font-family: 'Open Sans', sans-serif;
   background-color: #a40051;
 }
@@ -210,28 +210,28 @@ input[type="password"]
 		@media screen and (max-width:1200px){
 
 
-			.input, select{
+			.input, select, .radio{
 				font-size: 1rem;
 			}
 
-			.label{
+			.label, .control__message{
 				font-size: .75rem;
 			}
 		}
 
 		@media screen and (max-width:960px){
 
-			.label{
+			.label, .control__message{
 				font-size: .9rem;
 			}
 		}
 
 		@media screen and (max-width:800px){
-			.input, select{
+			.input, select, .radio{
 				font-size: 1.125rem;
 			}
 
-			.label{
+			.label, .control__message{
 				font-size: 1rem;
 			}
 		}
@@ -246,11 +246,11 @@ input[type="password"]
 		}
 
 		@media screen and (max-width:480px){
-			.input, select{
+			.input, select, .radio{
 				font-size: 1.25rem;
 			}
 
-			.label{
+			.label, .control__message{
 				font-size: 1.125rem;
 			}
 
