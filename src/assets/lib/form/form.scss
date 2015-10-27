@@ -88,6 +88,24 @@
 	margin:.25em 0 0 0 ;
 }
 
+.control__input {
+  position: relative;
+}
+
+.control__alert {
+  position: absolute;
+  top: 1.75rem/2;
+}
+
+.control__message {
+  padding: 0.75em;
+  color: #fff;
+  font-size: 1rem;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #a40051;
+}
+
+
 .control__input{
 	margin-top:.5em;
 }
@@ -151,7 +169,7 @@ select{
 .input--dob{
 	width:140px;
 }
-	
+
 .input::-webkit-input-placeholder{
 	line-height:1.5em;
 }
@@ -206,7 +224,7 @@ input[type="password"]
 			padding:0;
 			}
 		}
-		
+
 		@media screen and (max-width:480px){
 			.input, select{
 				font-size: 1.25rem;
