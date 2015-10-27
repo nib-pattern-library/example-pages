@@ -1,14 +1,14 @@
 {
   "name": "example-pages-component",
   "private": true,
-  "devDependencies": {
-    "phantomjs-polyfill": "0.0.1"
-  },
   "dependencies": {
     "@nib-styles/sass-breakpoints": "nib-styles/sass-breakpoints",
     "@nib-styles/sass-grid": "nib-styles/sass-grid",
     "@nib-styles/v2-icons": "nib-styles/v2-icons",
     "@nib-styles/v2-buttons": "nib-styles/v2-buttons",
     "@nib-styles/v2-typography": "nib-styles/v2-typography#Relative"
+  },
+  "devDependencies": {
+    "phantomjs-polyfill": "0.0.1"
   }
 }
