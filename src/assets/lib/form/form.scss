@@ -2,10 +2,7 @@
 @import "@nib-styles/v2-buttons";
 @import "@nib-styles/v2-icons";
 
-.page__body{
-	padding:0;
-	color:#444;
-}
+@import "./input";
 
 .panel{
 	padding:3em;
@@ -69,12 +66,6 @@
 	color:#fff;
 }
 
-.label, .input, select{
-  font-family: 'Open Sans', sans-serif;
-  line-height:1em;
-  color:#444;
-  display:block
-}
 
 .input, select{
 	font-size:1rem;
@@ -88,14 +79,43 @@
 	margin:.25em 0 0 0 ;
 }
 
+/*-------------------------------
+ * Control: Input
+ -------------------------------*/
+
 .control__input {
   position: relative;
 }
 
+.control__input--shrink {
+  display: inline-block;
+}
+
+/*-------------------------------
+ * Control: Alert
+ -------------------------------*/
+
 .control__alert {
   position: absolute;
-  top: 1.75rem/2;
+  top: (1.75/2)*1rem;
+  right: 0.5rem;
 }
+
+.control__alert--outside {
+  right: -2rem;
+}
+
+.control--valid .control__alert {
+  color: #009623;
+}
+
+.control--invalid .control__alert {
+  color: #a40051;
+}
+
+/*-------------------------------
+ * Control: Message
+ -------------------------------*/
 
 .control__message {
   padding: 0.75em;

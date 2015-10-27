@@ -11,34 +11,41 @@ title:      Form
         White form title
         </h3>
 
-        <div class="form__control control">
+        <div class="form__control control control--invalid">
           <label class="control__label label">
             Your name
           </label>
           <div class="control__input">
             <input class="input input--text"/>
-            <i class="control__alert v2-icon v2-icon--smallest v2-icon--warning"></i>
+            <i class="control__alert v2-icon v2-icon--smallest v2-icon--warning-inverse"></i>
           </div>
-          <div class="control__message">
+          <div class="control__message alert-message alert-message--error">
             You did it wrong!
           </div>
         </div>
 
-        <div class="form__control control">
+        <div class="form__control control control--valid">
+
           <label class="control__label label">
             Select box label
           </label>
+
           <p class="control__support support">
             Supporting text
           </p>
-          <div class="control__input input input--select">
-            <select value="select">
-              <option>Test option 1</option>
-              <option>Test option 2</option>
-            </select>
+
+          <div class="control__input control__input--shrink">
+            <div class="input input--select">
+              <select>
+                <option>Test option 1</option>
+                <option>Test option 2</option>
+              </select>
+            </div>
+            <i class="control__alert control__alert--outside v2-icon v2-icon--smallest v2-icon--tick"></i>
           </div>
 
         </div>
+
         <div class="form__control control">
           <label class="control__label label">
             Date of birth label
@@ -46,17 +53,20 @@ title:      Form
           <input class="control__input input input--dob" maxlength="10" placeholder="dd/mm/yyyy">
           </input>
         </div>
-        <div class="form__control control">
+        <div class="form__control control control--valid">
           <label class="control__label label">
             Date Label
           </label>
-          <input class="control__input input input--date" type="date">
-          </input>
+          <div class="control__input control__input--shrink">
+            <input class="input input--date" value="12/11/1978" placeholder="dd/mm/yyyy"/>
+            <i class="control__alert v2-icon v2-icon--smallest v2-icon--tick"></i>
+          </div>
         </div>
       </div>
     </div>
 
     <div class="panel">
+
       <div class="panel-form-support">
         <h3 class="v2-title v2-title--4">
         Form support text
@@ -65,48 +75,76 @@ title:      Form
           This is usually text that helps the user fill out the form
         </p>
       </div>
-    </div>
-    <div class="form form--elizabeth" style="float:right;">
-      <h3 class="v2-title v2-title--3">
-      Green form
-      </h3>
-      <div class="form__control control">
-        <label class="control__label label">
-          Text input Label
-        </label>
-        <input class="control__input input input--text">
-        </input>
-      </div>
-      <div class="form__control control">
-        <label class="control__label label">
-          Select box label
-        </label>
-        <div class="control__input input input--select">
-          <select value="select">
-            <option>Test option 1</option>
-            <option>Test option 2</option>
-          </select>
+
+      <div class="form form--elizabeth" style="float:right;">
+        <h3 class="v2-title v2-title--3">
+        Green form
+        </h3>
+        <div class="form__control control">
+          <label class="control__label label">
+            Text input Label
+          </label>
+          <input class="control__input input input--text">
+          </input>
         </div>
+        <div class="form__control control">
+          <label class="control__label label">
+            Select box label
+          </label>
+          <div class="control__input input input--select">
+            <select value="select">
+              <option>Test option 1</option>
+              <option>Test option 2</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form__control control">
+          <label class="control__label label">
+            Date of birth label
+          </label>
+          <p class="v2-copy control__support support">
+            This is supporting text.
+          </p>
+          <input class="control__input input input--dob" maxlength="10" placeholder="dd/mm/yyyy">
+          </input>
+        </div>
+
+        <div class="form__control control control--valid">
+          <label class="control__label label">
+            Date Label
+          </label>
+          <div class="control__input control__input--shrink">
+            <input class="input input--date" value="12/11/1978"/>
+            <i class="control__alert v2-icon v2-icon--smallest v2-icon--tick"></i>
+          </div>
+        </div>
+
+        <div class="form__control control control--invalid">
+          <label class="control__label label">Are you a man or a boy?</label>
+          <div class="control__input">
+
+
+            <div class="radio-group">
+
+              <label class="radio-group__item radio radio--selected">
+                <input type="radio" class="radio__input" checked/> Man
+              </label>
+
+              <label class="radio-group__item radio">
+                <input type="radio" class="radio__input"/> Boy
+              </label>
+
+            </div>
+
+          </div>
+          <div class="control__message">You are not!</div>
+        </div>
+
       </div>
-      <div class="form__control control">
-        <label class="control__label label">
-          Date of birth label
-        </label>
-        <p class="v2-copy control__support support">
-          This is supporting text.
-        </p>
-        <input class="control__input input input--dob" maxlength="10" placeholder="dd/mm/yyyy">
-        </input>
-      </div>
-      <div class="form__control control">
-        <label class="control__label label">
-          Date Label
-        </label>
-        <input class="control__input input input--date" type="date">
-        </input>
-      </div>
+      <div style="clear:both"></div>
+
     </div>
-    <div style="clear:both"></div>
   </div>
 
   <div class="panel panel--grey">
