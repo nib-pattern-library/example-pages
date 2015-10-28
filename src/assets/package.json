@@ -5,9 +5,11 @@
     "@nib-styles/sass-breakpoints": "nib-styles/sass-breakpoints",
     "@nib-styles/sass-grid": "nib-styles/sass-grid",
     "@nib-styles/v2-buttons": "nib-styles/v2-buttons",
-    "@nib-styles/v2-icons": "nib-styles/v2-icons",      
+    "@nib-styles/v2-icons": "nib-styles/v2-icons",
     "@nib-styles/v2-typography": "nib-styles/v2-typography#Relative",
-    "@nib/control": "^2.4.0"
+    "@nib/control": "^2.4.0",
+    "@nib-styles/accordion": "0.2.2",
+    "@nib-components/accordion": "0.3.1"
   },
   "devDependencies": {
     "phantomjs-polyfill": "0.0.1"
