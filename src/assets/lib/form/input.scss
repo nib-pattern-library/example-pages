@@ -1,10 +1,11 @@
 
 $input-height: 1em;
 $input-color: #444;
+$input-color--light: #fff;
 $input-font-size: 1.25rem;
 $input-font-family: 'Open Sans', sans-serif;
 
-.label, .input, select {
+.label, .input, select, .radio {
   display: block;
   color: $input-color;
   font-family: $input-font-family;
@@ -15,14 +16,9 @@ $input-font-family: 'Open Sans', sans-serif;
  * Control: Radio Group
  -------------------------------*/
 
-.radio-group__item:first-child {
-  border-top-left-radius: 0.175em;
-  border-bottom-left-radius: 0.175em;
-}
-
-.radio-group__item:last-child {
-  border-top-right-radius: 0.175em;
-  border-bottom-right-radius: 0.175em;
+.radio-group__item{
+  border-radius: 0.175em;
+  margin-top: .5rem;
 }
 
 /*-------------------------------
@@ -32,18 +28,34 @@ $input-font-family: 'Open Sans', sans-serif;
 .radio {
   display: inline-block;
   padding: 0.75em;
-  color: #fff;
   font-size: 1rem;
   font-family: $input-font-family;
   line-height: $input-height;
-  background-color: rgba(0, 0, 0, 0.2);
 }
 
-.radio--selected {
-  background-color: rgba(0, 0, 0, 0.4);
+.form--light .radio-group__item{
+  box-sizing:border-box;
+  border:1px solid #ccc;
+}
+.radio {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.form--elizabeth .radio--selected {
+  background-color: rgba(255, 255, 255, .9);
+}
+
+.form--light .radio--selected {
+  background-color:#eee;
 }
 
 .radio__input {
   vertical-align: text-bottom;
+}
+
+
+.control__input--radio{
+  margin-top:0;
+  position: relative;
 }
 
